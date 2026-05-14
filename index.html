@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PitaCoffee</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-emoji">☕</span>
+        <div>
+          <span class="logo-main">Pita</span><span class="logo-accent">Coffee</span>
+          <div class="logo-tagline">Est. 2020</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#features">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-right">
+        <button class="btn-order">Order Now <i class="fa fa-arrow-right"></i></button>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-badge">☕ Premium Quality Coffee</p>
+        <h1>Enjoy The Best<br/><span>Coffee Experience</span></h1>
+        <p class="hero-desc">Tabiiy va eng sifatli kofe donalaridan tayyorlangan ichimliklar. Har bir qultumda go'zallikni his qiling.</p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn-primary">Menyuni Ko'rish</a>
+          <a href="#about" class="btn-ghost">Biz Haqimizda</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>10+</strong><span>Kofe Turlari</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>500+</strong><span>Xursand Mijozlar</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>5★</strong><span>Reyting</span></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-img-ring">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=500&fit=crop" alt="Coffee"/>
+        </div>
+        <div class="hero-float float1">☕ Arabica</div>
+        <div class="hero-float float2">🌿 Natural</div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-images">
+        <img class="about-img-big" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&fit=crop" alt="Coffee shop"/>
+        <img class="about-img-small" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=250&fit=crop" alt="Latte"/>
+        <div class="about-badge-box">
+          <strong>6+</strong>
+          <span>Yillik Tajriba</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">— Biz Haqimizda</p>
+        <h2>Sifat Va Yoqimli Ta'm <span>Bizning Ustuvorligimiz</span></h2>
+        <p>PitaCoffee — bu faqat kofe emas, bu tajriba. Biz har bir piyolada mehnat, sevgi va sifatni birlashtirgan holda mijozlarimizga eng yaxshi ichimliklarni taqdim etamiz.</p>
+        <div class="about-points">
+          <div class="point"><i class="fa fa-check-circle"></i> 100% tabiiy kofe donalari</div>
+          <div class="point"><i class="fa fa-check-circle"></i> Professional baristalar jamoasi</div>
+          <div class="point"><i class="fa fa-check-circle"></i> Qulay va issiq muhit</div>
+          <div class="point"><i class="fa fa-check-circle"></i> Har kuni yangi mahsulotlar</div>
+        </div>
+        <a href="#menu" class="btn-primary">Menyuni Kashf Et</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">— Bizning Menyu</p>
+        <h2>10 Xil <span>Kofe Turlari</span></h2>
+        <p>Har bir did uchun maxsus tayyorlangan kofe ichimliklarimiz</p>
+      </div>
+
+      <div class="menu-filter">
+        <button class="filter-btn active" data-filter="all">Barchasi</button>
+        <button class="filter-btn" data-filter="hot">Issiq ☕</button>
+        <button class="filter-btn" data-filter="cold">Sovuq 🧊</button>
+        <button class="filter-btn" data-filter="special">Maxsus ⭐</button>
+      </div>
+
+      <div class="menu-grid">
+
+        <div class="menu-card" data-cat="hot">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop" alt="Espresso"/>
+            <span class="menu-tag hot-tag">Issiq</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Espresso</h3>
+              <span class="price">18 000 so'm</span>
+            </div>
+            <p>Kuchli va to'yimli klassik espresso. Toza arabika donalaridan.</p>
+            <div class="menu-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="hot">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" alt="Latte"/>
+            <span class="menu-tag hot-tag">Issiq</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Café Latte</h3>
+              <span class="price">22 000 so'm</span>
+            </div>
+            <p>Yumshoq sut ko'pigi bilan nafis espresso. Kunning eng yaxshi boshlanishi.</p>
+            <div class="menu-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="hot special">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop" alt="Cappuccino"/>
+            <span class="menu-tag special-tag">⭐ Maxsus</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Cappuccino</h3>
+              <span class="price">24 000 so'm</span>
+            </div>
+            <p>Italiyaning sevimli ichimligini Pita usulida his eting.</p>
+            <div class="menu-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="cold">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&h=300&fit=crop" alt="Americano"/>
+            <span class="menu-tag cold-tag">🧊 Sovuq</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Iced Americano</h3>
+              <span class="price">20 000 so'm</span>
+            </div>
+            <p>Muzli va tetiklashtiruvchi. Issiq kunlarda ideal tanlov.</p>
+            <div class="menu-stars">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="cold special">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Cold Brew"/>
+            <span class="menu-tag special-tag">⭐ Maxsus</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Cold Brew</h3>
+              <span class="price">28 000 so'm</span>
+            </div>
+            <p>12 soat davomida sovuq suvda dimilgan maxsus kofe.</p>
+            <div class="menu-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="hot">
+          <div class="menu-img">
+            <img src="https://www.thespruceeats.com/thmb/HXaU0FwlEoZ6d5MoPVzGCXKx41k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/85153452-56a176765f9b58b7d0bf84dd.jpg" alt="Macchiato"/>
+            <span class="menu-tag hot-tag">Issiq</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Macchiato</h3>
+              <span class="price">21 000 so'm</span>
+            </div>
+            <p>Espresso ustiga ozgina sut ko'pigi — oddiy ammo mukammal.</p>
+            <div class="menu-stars">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="cold">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&h=300&fit=crop" alt="Frappe"/>
+            <span class="menu-tag cold-tag">🧊 Sovuq</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Frappé</h3>
+              <span class="price">26 000 so'm</span>
+            </div>
+            <p>Muzlatilgan kofe va krem bilan tayyorlangan shirin ichimlik.</p>
+            <div class="menu-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="hot special">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&h=300&fit=crop" alt="Mocha"/>
+            <span class="menu-tag special-tag">⭐ Maxsus</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Mocha</h3>
+              <span class="price">25 000 so'm</span>
+            </div>
+            <p>Shokolad va kofe uyg'unligi — qalbingizni isitadi.</p>
+            <div class="menu-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="cold">
+          <div class="menu-img">
+            <img src="https://kitchenconfidante.com/wp-content/uploads/2020/04/Dalgona-Coffee-with-Boba-kitchenconfidante.com-7339-750x1124.jpg" alt="Dalgona"/>
+            <span class="menu-tag cold-tag">🧊 Sovuq</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Dalgona Coffee</h3>
+              <span class="price">23 000 so'm</span>
+            </div>
+            <p>Ko'pikli va shirin Dalgona — trend ichimligimiz.</p>
+            <div class="menu-stars">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="hot special">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=300&fit=crop" alt="Turkish"/>
+            <span class="menu-tag special-tag">⭐ Maxsus</span>
+            <div class="menu-overlay"><button>Buyurtma</button></div>
+          </div>
+          <div class="menu-body">
+            <div class="menu-top">
+              <h3>Turk Kofesi</h3>
+              <span class="price">16 000 so'm</span>
+            </div>
+            <p>An'anaviy mis piyolada tayyorlangan haqiqiy Turk kofesi.</p>
+            <div class="menu-stars">★★★★★</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head light">
+        <p class="section-label">— Nima Uchun Biz?</p>
+        <h2>PitaCoffee <span>Farqi</span></h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3>Organik Donalar</h3>
+          <p>Barcha kofe donalarimiz sertifikatlangan organik fermerlardan keltiriladi.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👨‍🍳</div>
+          <h3>Expert Baristalar</h3>
+          <p>Xalqaro musobaqalarda qatnashgan professional baristalar jamoamiz.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Tez Yetkazib Berish</h3>
+          <p>Buyurtmangiz 30 daqiqa ichida eshigingizga yetkaziladi.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💝</div>
+          <h3>Sadoqat Dasturi</h3>
+          <p>Har 10 ta buyurtmada 1 ta bepul kofe! Bizning mijozlar — oilamiz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">— Mijozlar Fikri</p>
+        <h2>Ular <span>Nima Deydi?</span></h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"PitaCoffee kofesi meni har kuni tetiklashtiradi. Cappuccino ularda eng yaxshisi!"</p>
+          <div class="testi-user">
+            <div class="testi-avatar">A</div>
+            <div><strong>Aziz Karimov</strong><span>Doimiy Mijoz</span></div>
+          </div>
+        </div>
+        <div class="testi-card featured">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Cold Brew ichganimdan keyin boshqa hech qayerda kofe icholmayapman. Sifat ajoyib!"</p>
+          <div class="testi-user">
+            <div class="testi-avatar">M</div>
+            <div><strong>Malika Yusupova</strong><span>Blogger</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Atmosfera, xizmat, kofe — hamma narsa mukammal. Do'stlarimga tavsiya qilaman!"</p>
+          <div class="testi-user">
+            <div class="testi-avatar">J</div>
+            <div><strong>Jasur Toshmatov</strong><span>IT Mutaxassis</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <p class="section-label">— Bog'laning</p>
+        <h2>Biz Bilan <span>Aloqa</span></h2>
+        <div class="contact-items">
+          <div class="contact-item">
+            <i class="fa fa-map-marker-alt"></i>
+            <div><strong>Manzil</strong><span>Taqachi, ko'kcha darvoza ko'chasi</span></div>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-phone"></i>
+            <div><strong>Telefon</strong><span>+998 94 648 00 04</span></div>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-clock"></i>
+            <div><strong>Ish Vaqti</strong><span>07:00 — 02:00, Har kuni</span></div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <div><strong>Instagram</strong><span>@pita_coffee</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Buyurtma Bering</h3>
+        <input type="text" placeholder="Ismingiz"/>
+        <input type="tel" placeholder="Telefon raqamingiz"/>
+        <select>
+          <option>Kofe turini tanlang</option>
+          <option>Espresso — 18 000</option>
+          <option>Café Latte — 22 000</option>
+          <option>Cappuccino — 24 000</option>
+          <option>Iced Americano — 20 000</option>
+          <option>Cold Brew — 28 000</option>
+          <option>Macchiato — 21 000</option>
+          <option>Frappé — 26 000</option>
+          <option>Mocha — 25 000</option>
+          <option>Dalgona Coffee — 23 000</option>
+          <option>Turk Kofesi — 16 000</option>
+        </select>
+        <textarea placeholder="Qo'shimcha izoh..."></textarea>
+        <button class="btn-primary full">Buyurtma Yuborish <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span>☕</span>
+        <div>
+          <span class="logo-main">Pita</span><span class="logo-accent">Coffee</span>
+          <p>Har qultumda baxt</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://instagram.com/pita_coffee"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/Pita_Coffee"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2020 PitaCoffee. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky header
+    window.addEventListener('scroll', () => {
+      const h = document.getElementById('header');
+      h.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Menu filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.menu-card').forEach(card => {
+          if (filter === 'all' || card.dataset.cat.includes(filter)) {
+            card.style.display = 'block';
+            card.style.animation = 'fadeIn 0.4s ease';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
