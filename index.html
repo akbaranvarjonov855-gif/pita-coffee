@@ -45,7 +45,7 @@
       <div class="hero-text">
         <p class="hero-badge">☕ Premium Quality Coffee</p>
         <h1>Enjoy The Best<br/><span>Coffee Experience</span></h1>
-        <p class="hero-desc">Tabiiy va eng sifatli kofe donalaridan tayyorlangan ichimliklar. Har bir qultumda go'zallikni his qiling.</p>
+        <p class="hero-desc">Tabiiy va eng sifatli kofe donalaridan tayyorlangan ichimliklar. Har bir qultumda his eting go'zallikni.</p>
         <div class="hero-btns">
           <a href="#menu" class="btn-primary">Menyuni Ko'rish</a>
           <a href="#about" class="btn-ghost">Biz Haqimizda</a>
@@ -78,13 +78,13 @@
         <img class="about-img-big" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&fit=crop" alt="Coffee shop"/>
         <img class="about-img-small" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=250&fit=crop" alt="Latte"/>
         <div class="about-badge-box">
-          <strong>6+</strong>
+          <strong>10+</strong>
           <span>Yillik Tajriba</span>
         </div>
       </div>
       <div class="about-text">
         <p class="section-label">— Biz Haqimizda</p>
-        <h2>Sifat Va Yoqimli Ta'm <span>Bizning Ustuvorligimiz</span></h2>
+        <h2>Sifat Va Maroqli Ta'm <span>Bizning Ustuvorligimiz</span></h2>
         <p>PitaCoffee — bu faqat kofe emas, bu tajriba. Biz har bir piyolada mehnat, sevgi va sifatni birlashtirgan holda mijozlarimizga eng yaxshi ichimliklarni taqdim etamiz.</p>
         <div class="about-points">
           <div class="point"><i class="fa fa-check-circle"></i> 100% tabiiy kofe donalari</div>
@@ -197,7 +197,7 @@
 
         <div class="menu-card" data-cat="hot">
           <div class="menu-img">
-            <img src="https://www.thespruceeats.com/thmb/HXaU0FwlEoZ6d5MoPVzGCXKx41k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/85153452-56a176765f9b58b7d0bf84dd.jpg" alt="Macchiato"/>
+            <img src="https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4?w=400&h=300&fit=crop" alt="Macchiato"/>
             <span class="menu-tag hot-tag">Issiq</span>
             <div class="menu-overlay"><button>Buyurtma</button></div>
           </div>
@@ -245,7 +245,7 @@
 
         <div class="menu-card" data-cat="cold">
           <div class="menu-img">
-            <img src="https://kitchenconfidante.com/wp-content/uploads/2020/04/Dalgona-Coffee-with-Boba-kitchenconfidante.com-7339-750x1124.jpg" alt="Dalgona"/>
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop" alt="Dalgona"/>
             <span class="menu-tag cold-tag">🧊 Sovuq</span>
             <div class="menu-overlay"><button>Buyurtma</button></div>
           </div>
@@ -356,19 +356,19 @@
         <div class="contact-items">
           <div class="contact-item">
             <i class="fa fa-map-marker-alt"></i>
-            <div><strong>Manzil</strong><span>Taqachi, ko'kcha darvoza ko'chasi</span></div>
+            <div><strong>Manzil</strong><span>Toshkent, Chilonzor, 15-uy</span></div>
           </div>
           <div class="contact-item">
             <i class="fa fa-phone"></i>
-            <div><strong>Telefon</strong><span>+998 94 648 00 04</span></div>
+            <div><strong>Telefon</strong><span>+998 90 123 45 67</span></div>
           </div>
           <div class="contact-item">
             <i class="fa fa-clock"></i>
-            <div><strong>Ish Vaqti</strong><span>07:00 — 02:00, Har kuni</span></div>
+            <div><strong>Ish Vaqti</strong><span>08:00 — 22:00, Har kuni</span></div>
           </div>
           <div class="contact-item">
             <i class="fab fa-instagram"></i>
-            <div><strong>Instagram</strong><span>@pita_coffee</span></div>
+            <div><strong>Instagram</strong><span>@pitacoffee</span></div>
           </div>
         </div>
       </div>
@@ -412,12 +412,13 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="footer-socials">
-        <a href="https://instagram.com/pita_coffee"><i class="fab fa-instagram"></i></a>
-        <a href="https://t.me/Pita_Coffee"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2020 PitaCoffee. Barcha huquqlar himoyalangan.</p>
+      <p>© 2025 PitaCoffee. Barcha huquqlar himoyalangan.</p>
     </div>
   </footer>
 
@@ -426,6 +427,21 @@
     window.addEventListener('scroll', () => {
       const h = document.getElementById('header');
       h.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Burger menu
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('.nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      burger.classList.toggle('active');
+    });
+    // Close nav on link click
+    document.querySelectorAll('.nav a').forEach(a => {
+      a.addEventListener('click', () => {
+        nav.classList.remove('open');
+        burger.classList.remove('active');
+      });
     });
 
     // Menu filter
